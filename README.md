@@ -189,7 +189,7 @@ CUDA_CLANG_VERSIONS: VersionMap = {
 ```
 ---
 
-安装packaging包（是否必须未知）：
+安装packaging包（setup需要）：
 ```shell
 conda install packaging
 ```
