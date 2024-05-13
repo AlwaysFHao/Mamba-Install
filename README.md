@@ -22,6 +22,11 @@ Mamba论文bibtex引用如下：
   ```shell
   ldd --version
   ```
+  - gcc，具体版本要求未知，本文使用11.4.0
+  可用以下命令查看gcc版本
+  ```shell
+  gcc --version
+  ```
 
 # CUDA安装
 - 本章节参考博客：https://www.gongsunqi.xyz/posts/3c995b2a/
