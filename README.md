@@ -33,7 +33,7 @@ Mamba论文bibtex引用如下：
 
 首先需要在系统层面进行完整版CUDA安装（conda内也可以安装cuda，但只是精简版cuda，无法进行编译操作）。
 ## 安装CudaToolKit
-先打开英伟达CudaToolKit官网：https://developer.nvidia.com/cuda-toolkit-archive ，然后选择cuda11.8（也按照自己的需求来选择其他版本，但是要求大于11.6）
+先打开英伟达CudaToolKit官网：https://developer.nvidia.com/cuda-toolkit-archive ，然后选择cuda11.8（也可以按照自己的需求来选择其他版本，但是要求大于11.6）
 <p align="center">
     <img src="images/cuda_tool_kit_1.png" alt="CudaToolKit-1"/>
 </p>
