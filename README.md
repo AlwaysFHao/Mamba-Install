@@ -197,7 +197,7 @@ conda install packaging
 ## causal-conv1d编译安装
 causal-conv1d其实可以用pytorch自带的nn.Conv1d加padding的方式等价实现，但是效率相对较低，causal-conv1d库在cuda层面重构，效率更高。
 首先打开causal-conv1d的github：https://github.com/Dao-AILab/causal-conv1d
-然后通过git或者直接Download Zip源码的方式下载源码，之后修改源码文件夹中`setuop.py`文件，将
+然后通过git或者直接Download Zip源码的方式下载源码，之后修改源码文件夹中`setup.py`文件，将
 ```python
 # FORCE_BUILD: Force a fresh build locally, instead of attempting to find prebuilt wheels
 # SKIP_CUDA_BUILD: Intended to allow CI to use a simple `python setup.py sdist` run to copy over raw files, without any cuda compilation
@@ -233,14 +233,14 @@ import causal_conv1d_cuda
 
 ## mamba-ssm编译安装
 mamba-ssm安装流程和causal-conv1d安装流程基本一致，首先打开mamba官方库：https://github.com/state-spaces/mamba
-然后通过git或者直接Download Zip源码的方式下载源码，之后修改源码文件夹中`setuop.py`文件，将
+然后通过git或者直接Download Zip源码的方式下载源码，之后修改源码文件夹中`setup.py`文件，将
 ```python
 # FORCE_BUILD: Force a fresh build locally, instead of attempting to find prebuilt wheels
 # SKIP_CUDA_BUILD: Intended to allow CI to use a simple `python setup.py sdist` run to copy over raw files, without any cuda compilation
-FORCE_BUILD = os.getenv("CAUSAL_CONV1D_FORCE_BUILD", "FALSE") == "TRUE"
-SKIP_CUDA_BUILD = os.getenv("CAUSAL_CONV1D_SKIP_CUDA_BUILD", "FALSE") == "TRUE"
+FORCE_BUILD = os.getenv("MAMBA_FORCE_BUILD", "FALSE") == "TRUE"
+SKIP_CUDA_BUILD = os.getenv("MAMBA_SKIP_CUDA_BUILD", "FALSE") == "TRUE"
 # For CI, we want the option to build with C++11 ABI since the nvcr images use C++11 ABI
-FORCE_CXX11_ABI = os.getenv("CAUSAL_CONV1D_FORCE_CXX11_ABI", "FALSE") == "TRUE"
+FORCE_CXX11_ABI = os.getenv("MAMBA_FORCE_CXX11_ABI", "FALSE") == "TRUE"
 ```
 修改为
 ```python
