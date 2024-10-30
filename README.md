@@ -124,6 +124,7 @@ cat /usr/local/cuda-11.8（根据你的cuda安装目录进行修改）/include/c
 ```
 至此，cuda安装完成。
 
+# Mamba安装
 ## Anaconda安装（已安装可忽略）
 这个网上教程一大堆，这里我就只简单说一下。
 首先下载安装程序，方法有很多，下面提供两种方法
@@ -272,3 +273,14 @@ import torch
 import selective_scan_cuda
 ```
 没有报错即为成功。
+
+# 引用
+如果该文档给到你帮助，请考虑引用我们的工作🤗：
+```
+@article{fan2024tim4rec,
+  title={TiM4Rec: An Efficient Sequential Recommendation Model Based on Time-Aware Structured State Space Duality Model},
+  author={Fan, Hao and Zhu, Mengyi and Hu, Yanrong and Feng, Hailin and He, Zhijie and Liu, Hongjiu and Liu, Qingyang},
+  journal={arXiv preprint arXiv:2409.16182},
+  year={2024}
+}
+```
