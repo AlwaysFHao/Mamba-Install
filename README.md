@@ -233,6 +233,8 @@ import causal_conv1d_cuda
 没有报错即为成功。
 
 ## mamba-ssm编译安装
+***重要更新: mamba2.2.4更新了cuda版本需求，如果cuda版本低于12.4，请删除源文件的pyproject.toml文件，或下载mamba2.2.2源码。***
+
 mamba-ssm安装流程和causal-conv1d安装流程基本一致，首先打开mamba官方库：https://github.com/state-spaces/mamba
 然后通过git或者直接Download Zip源码的方式下载源码，之后修改源码文件夹中`setup.py`文件，将
 ```python
